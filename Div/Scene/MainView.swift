@@ -6,16 +6,13 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             VStack {
-                ScrollView(.horizontal) {
-
-
-                }
+                Text("Úvodní obrazovka")
             }
                 .navigationTitle("Div.cz")
                 .navigationBarTitleDisplayMode(.large)
-        }
-        .toolbar {
-            loginButton
+                .toolbar {
+                    loginButton
+                }
         }
     }
 }

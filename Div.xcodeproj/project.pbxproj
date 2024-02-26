@@ -12,6 +12,7 @@
 		445B32A72B8C9A4F006AB596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 445B32A62B8C9A4F006AB596 /* Assets.xcassets */; };
 		445B32AA2B8C9A4F006AB596 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 445B32A92B8C9A4F006AB596 /* Preview Assets.xcassets */; };
 		44DB98612B8CBE8000F443DA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB98602B8CBE8000F443DA /* MainView.swift */; };
+		44DB98642B8CC15A00F443DA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB98632B8CC15A00F443DA /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		445B32A62B8C9A4F006AB596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		445B32A92B8C9A4F006AB596 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44DB98602B8CBE8000F443DA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		44DB98632B8CC15A00F443DA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				445B32A22B8C9A4E006AB596 /* DivApp.swift */,
 				445B32A42B8C9A4E006AB596 /* RootView.swift */,
+				44DB98622B8CC13C00F443DA /* Components */,
 				44B28AD92B8CA13500674EC1 /* Scene */,
 				44B28AD82B8CA12E00674EC1 /* Model */,
 				445B32A62B8C9A4F006AB596 /* Assets.xcassets */,
@@ -84,6 +87,14 @@
 				44DB98602B8CBE8000F443DA /* MainView.swift */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		44DB98622B8CC13C00F443DA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				44DB98632B8CC15A00F443DA /* CardView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +190,7 @@
 			files = (
 				445B32A52B8C9A4E006AB596 /* RootView.swift in Sources */,
 				44DB98612B8CBE8000F443DA /* MainView.swift in Sources */,
+				44DB98642B8CC15A00F443DA /* CardView.swift in Sources */,
 				445B32A32B8C9A4E006AB596 /* DivApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

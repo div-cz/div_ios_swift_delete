@@ -4,21 +4,19 @@ struct RootView: View {
 
     // MARK: - BODY
     var body: some View {
-        NavigationView {
             TabView {
                 homeTab
                 moviesTab
                 celebritiesTab
                 infoTab
             }
-        }
     }
 }
 
 // MARK: - EXTENSION
 extension RootView {
     private var homeTab: some View {
-        Text("Úvodní obrazovka")
+        MainView()
             .tabItem {
                 VStack {
                     Image(systemName: "square.grid.2x2.fill")
@@ -60,5 +58,7 @@ extension RootView {
 
 // MARK: - PREVIEW
 #Preview {
-    RootView()
+    NavigationView {
+        RootView()
+    }
 }
