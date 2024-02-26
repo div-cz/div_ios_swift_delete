@@ -4,7 +4,9 @@ import SwiftUI
 struct DivApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                RootView()
+            }
         }
     }
 }
