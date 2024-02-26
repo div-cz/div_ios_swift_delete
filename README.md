@@ -3,4 +3,6 @@ An application for Apple`s products
 
 ## UI Progress
 
-/Users/Berda/Desktop/Simulator Screenshot - iPhone 15 - 2024-02-26 at 16.05.07.png
+<div style="display: flex;">
+  <img src="https://github.com/div-cz/div_ios/assets/107038196/fd911370-95ed-4155-b482-5f8637ce9fd9" alt="Screenshot" width="300" />
+</div>
