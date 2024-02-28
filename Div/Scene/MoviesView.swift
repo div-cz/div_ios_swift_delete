@@ -5,7 +5,7 @@ struct MoviesView: View {
 
     // MARK: - BODY
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Text("Filmy")
                 .navigationTitle("Filmy")
         }
@@ -14,5 +14,7 @@ struct MoviesView: View {
 
 // MARK: - PREVIEW
 #Preview {
-    MoviesView()
+    NavigationStack {
+        MoviesView()
+    }
 }

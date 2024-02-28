@@ -59,8 +59,6 @@ extension RootView {
 
 // MARK: - PREVIEW
 #Preview {
-    NavigationView {
         RootView()
-    }
-    .environmentObject(Coordinator())
+            .environmentObject(Coordinator())
 }

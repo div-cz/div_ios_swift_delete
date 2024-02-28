@@ -5,7 +5,7 @@ struct InfoView: View {
 
     // MARK: - BODY
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Text("Info & kontakty")
                 .navigationTitle("Info")
         }
@@ -14,5 +14,7 @@ struct InfoView: View {
 
 // MARK: - PREVIEW
 #Preview {
-    InfoView()
+    NavigationStack {
+        InfoView()
+    }
 }

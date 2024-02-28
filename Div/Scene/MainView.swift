@@ -4,10 +4,17 @@ struct MainView: View {
 
     // MARK: - BODY
     var body: some View {
-        NavigationView {
-            VStack {
-                Text("Úvodní obrazovka")
-            }
+        NavigationStack {
+            ScrollView(.vertical) {
+                VStack(spacing: 30) {
+                    listOfMoview
+                    listOfCelebrities
+                    testList
+                }
+                    Spacer()
+                }
+            .scrollIndicators(.hidden)
+                .padding(.horizontal)
                 .navigationTitle("Div.cz")
                 .navigationBarTitleDisplayMode(.large)
                 .toolbar {
@@ -31,11 +38,53 @@ extension MainView {
             }
         }
     }
+
+    private var listOfMoview: some View {
+        VStack(alignment: .leading) {
+            Text("Seznam filmů")
+            ScrollView(.horizontal) {
+                HStack {
+                    ForEach(1...6, id: \.self) { _ in
+                            CardView()
+                        }
+                }
+            }
+            .scrollIndicators(.hidden)
+        }
+    }
+
+    private var listOfCelebrities: some View {
+        VStack(alignment: .leading) {
+            Text("Výročí osobností")
+            ScrollView(.horizontal) {
+                HStack {
+                    ForEach(1...6, id: \.self) { _ in
+                        CardView()
+                    }
+                }
+            }
+            .scrollIndicators(.hidden)
+        }
+    }
+
+    private var testList: some View {
+        VStack(alignment: .leading) {
+            Text("Test")
+            ScrollView(.horizontal) {
+                HStack {
+                    ForEach(1...6, id: \.self) { _ in
+                        CardView()
+                    }
+                }
+            }
+            .scrollIndicators(.hidden)
+        }
+    }
 }
 
 // MARK: - PREVIEW
 #Preview {
-    NavigationView {
+    NavigationStack {
         MainView()
     }
 }
