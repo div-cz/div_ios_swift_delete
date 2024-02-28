@@ -7,9 +7,9 @@ struct MainView: View {
         NavigationStack {
             ScrollView(.vertical) {
                 VStack(spacing: 30) {
-                    listOfMoview
-                    listOfCelebrities
-                    testList
+                    RowScrollCardsView(headerTitle: "Seznam filmů")
+                    RowScrollCardsView(headerTitle: "Výročí osobností")
+                    RowScrollCardsView(headerTitle: "Test")
                 }
                     Spacer()
                 }
@@ -36,48 +36,6 @@ extension MainView {
                     Image(systemName: "person.crop.circle")
                 }
             }
-        }
-    }
-
-    private var listOfMoview: some View {
-        VStack(alignment: .leading) {
-            Text("Seznam filmů")
-            ScrollView(.horizontal) {
-                HStack {
-                    ForEach(1...6, id: \.self) { _ in
-                            CardView()
-                        }
-                }
-            }
-            .scrollIndicators(.hidden)
-        }
-    }
-
-    private var listOfCelebrities: some View {
-        VStack(alignment: .leading) {
-            Text("Výročí osobností")
-            ScrollView(.horizontal) {
-                HStack {
-                    ForEach(1...6, id: \.self) { _ in
-                        CardView()
-                    }
-                }
-            }
-            .scrollIndicators(.hidden)
-        }
-    }
-
-    private var testList: some View {
-        VStack(alignment: .leading) {
-            Text("Test")
-            ScrollView(.horizontal) {
-                HStack {
-                    ForEach(1...6, id: \.self) { _ in
-                        CardView()
-                    }
-                }
-            }
-            .scrollIndicators(.hidden)
         }
     }
 }
