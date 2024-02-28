@@ -11,6 +11,10 @@
 		445B32A52B8C9A4E006AB596 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B32A42B8C9A4E006AB596 /* RootView.swift */; };
 		445B32A72B8C9A4F006AB596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 445B32A62B8C9A4F006AB596 /* Assets.xcassets */; };
 		445B32AA2B8C9A4F006AB596 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 445B32A92B8C9A4F006AB596 /* Preview Assets.xcassets */; };
+		44B096552B8F3A9400AA9125 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B096542B8F3A9400AA9125 /* Coordinator.swift */; };
+		44B096572B8F3B7500AA9125 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B096562B8F3B7500AA9125 /* MoviesView.swift */; };
+		44B096592B8F3B8300AA9125 /* CelebritiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B096582B8F3B8300AA9125 /* CelebritiesView.swift */; };
+		44B0965B2B8F3B9000AA9125 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B0965A2B8F3B9000AA9125 /* InfoView.swift */; };
 		44DB98612B8CBE8000F443DA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB98602B8CBE8000F443DA /* MainView.swift */; };
 		44DB98642B8CC15A00F443DA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB98632B8CC15A00F443DA /* CardView.swift */; };
 /* End PBXBuildFile section */
@@ -21,6 +25,10 @@
 		445B32A42B8C9A4E006AB596 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		445B32A62B8C9A4F006AB596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		445B32A92B8C9A4F006AB596 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		44B096542B8F3A9400AA9125 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		44B096562B8F3B7500AA9125 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
+		44B096582B8F3B8300AA9125 /* CelebritiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebritiesView.swift; sourceTree = "<group>"; };
+		44B0965A2B8F3B9000AA9125 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		44DB98602B8CBE8000F443DA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		44DB98632B8CC15A00F443DA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +65,7 @@
 			children = (
 				445B32A22B8C9A4E006AB596 /* DivApp.swift */,
 				445B32A42B8C9A4E006AB596 /* RootView.swift */,
+				44B096542B8F3A9400AA9125 /* Coordinator.swift */,
 				44DB98622B8CC13C00F443DA /* Components */,
 				44B28AD92B8CA13500674EC1 /* Scene */,
 				44B28AD82B8CA12E00674EC1 /* Model */,
@@ -85,6 +94,9 @@
 			isa = PBXGroup;
 			children = (
 				44DB98602B8CBE8000F443DA /* MainView.swift */,
+				44B096562B8F3B7500AA9125 /* MoviesView.swift */,
+				44B096582B8F3B8300AA9125 /* CelebritiesView.swift */,
+				44B0965A2B8F3B9000AA9125 /* InfoView.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -188,8 +200,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44B0965B2B8F3B9000AA9125 /* InfoView.swift in Sources */,
+				44B096592B8F3B8300AA9125 /* CelebritiesView.swift in Sources */,
 				445B32A52B8C9A4E006AB596 /* RootView.swift in Sources */,
+				44B096572B8F3B7500AA9125 /* MoviesView.swift in Sources */,
 				44DB98612B8CBE8000F443DA /* MainView.swift in Sources */,
+				44B096552B8F3A9400AA9125 /* Coordinator.swift in Sources */,
 				44DB98642B8CC15A00F443DA /* CardView.swift in Sources */,
 				445B32A32B8C9A4E006AB596 /* DivApp.swift in Sources */,
 			);

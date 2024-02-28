@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct RootView: View {
+    @EnvironmentObject var coordinator: Coordinator
 
     // MARK: - BODY
     var body: some View {
@@ -16,7 +17,7 @@ struct RootView: View {
 // MARK: - EXTENSION
 extension RootView {
     private var homeTab: some View {
-        MainView()
+        coordinator.mainScene
             .tabItem {
                 VStack {
                     Image(systemName: "square.grid.2x2.fill")
@@ -26,7 +27,7 @@ extension RootView {
     }
 
     private var moviesTab: some View {
-        Text("Filmy")
+        coordinator.moviesScene
             .tabItem {
                 VStack {
                     Image(systemName: "movieclapper")
@@ -36,7 +37,7 @@ extension RootView {
     }
 
     private var celebritiesTab: some View {
-        Text("Osobnosti")
+        coordinator.celebritiesScene
             .tabItem {
                 VStack {
                     Image(systemName: "person.crop.square")
@@ -46,7 +47,7 @@ extension RootView {
     }
 
     private var infoTab: some View {
-        Text("Informace & kontakty")
+        coordinator.infoScene
             .tabItem {
                 VStack {
                     Image(systemName: "info.square")
@@ -61,4 +62,5 @@ extension RootView {
     NavigationView {
         RootView()
     }
+    .environmentObject(Coordinator())
 }
