@@ -7,7 +7,7 @@ struct MoviesView: View {
   var body: some View {
     NavigationStack {
       Text("Filmy")
-        .navigationTitle("Filmy")
+        .navigationTitle(Div.movies.title)
     }
   }
 }

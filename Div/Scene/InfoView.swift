@@ -7,7 +7,7 @@ struct InfoView: View {
     var body: some View {
         NavigationStack {
             Text("Info & kontakty")
-                .navigationTitle("Info")
+            .navigationTitle(Div.info.title)
         }
     }
 }

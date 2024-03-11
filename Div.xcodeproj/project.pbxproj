@@ -19,6 +19,7 @@
 		44DB98612B8CBE8000F443DA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB98602B8CBE8000F443DA /* MainView.swift */; };
 		44DB98642B8CC15A00F443DA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB98632B8CC15A00F443DA /* CardView.swift */; };
 		44FC4AD82B9F893200FFD287 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC4AD72B9F893200FFD287 /* GamesView.swift */; };
+		44FC4ADA2B9F941B00FFD287 /* Div.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC4AD92B9F941B00FFD287 /* Div.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		44DB98602B8CBE8000F443DA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		44DB98632B8CC15A00F443DA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		44FC4AD72B9F893200FFD287 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
+		44FC4AD92B9F941B00FFD287 /* Div.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Div.swift; path = Div/Scene/Div.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		44B28AD82B8CA12E00674EC1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				44FC4AD92B9F941B00FFD287 /* Div.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				44FC4AD82B9F893200FFD287 /* GamesView.swift in Sources */,
 				44D2A2072B8F7449008977B6 /* RowScrollCardsView.swift in Sources */,
 				445B32A52B8C9A4E006AB596 /* RootView.swift in Sources */,
+				44FC4ADA2B9F941B00FFD287 /* Div.swift in Sources */,
 				44B096572B8F3B7500AA9125 /* MoviesView.swift in Sources */,
 				44DB98612B8CBE8000F443DA /* MainView.swift in Sources */,
 				44B096552B8F3A9400AA9125 /* Coordinator.swift in Sources */,

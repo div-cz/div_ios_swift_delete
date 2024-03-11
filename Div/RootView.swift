@@ -22,7 +22,7 @@ extension RootView {
       .tabItem {
         VStack {
           Image(systemName: "square.grid.2x2.fill")
-          Text("Div.cz")
+          Text(Div.app.title)
         }
       }
   }
@@ -32,7 +32,7 @@ extension RootView {
       .tabItem {
         VStack {
           Image(systemName: "movieclapper")
-          Text("Filmy")
+          Text(Div.movies.title)
         }
       }
   }
@@ -42,7 +42,7 @@ extension RootView {
       .tabItem {
         VStack {
           Image(systemName: "books.vertical")
-          Text("Knihy")
+          Text(Div.books.title)
         }
       }
   }
@@ -52,7 +52,7 @@ extension RootView {
       .tabItem {
         VStack {
           Image(systemName: "gamecontroller")
-          Text("Hry")
+          Text(Div.games.title)
         }
       }
   }
@@ -62,7 +62,7 @@ extension RootView {
       .tabItem {
         VStack {
           Image(systemName: "info.square")
-          Text("Info")
+          Text(Div.info.title)
         }
       }
   }

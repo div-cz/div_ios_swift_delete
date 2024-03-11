@@ -7,7 +7,7 @@ struct GamesView: View {
   var body: some View {
       NavigationStack {
           Text("Hry")
-              .navigationTitle("Hry")
+          .navigationTitle(Div.games.title)
       }
   }
 }

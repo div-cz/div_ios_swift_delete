@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct MainView: View {
+  // MARK: - PROPERTIES
   
   // MARK: - BODY
   var body: some View {
@@ -15,7 +16,7 @@ struct MainView: View {
       }
       .scrollIndicators(.hidden)
       .padding(.horizontal)
-      .navigationTitle("Div.cz")
+      .navigationTitle(Div.app.title)
       .navigationBarTitleDisplayMode(.large)
       .toolbar {
         loginButton
