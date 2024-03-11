@@ -4,6 +4,5 @@ An application for Apple`s products
 ## UI Progress
 
 <div style="display: flex;">
-  <img src="https://github.com/div-cz/div_ios/assets/107038196/fd911370-95ed-4155-b482-5f8637ce9fd9" alt="Screenshot" width="300" />
-    <img src="https://github.com/div-cz/div_ios/assets/107038196/eccda4d5-d0a7-444a-81ae-3f8e6561da92" alt="MainView-ScrollCards" width="300" />
+  <img src="https://github.com/div-cz/div_ios/assets/107038196/450af486-0564-41ba-959a-567afc9b415f" alt="Screenshot" width="300" />
 </div>
