@@ -1,13 +1,13 @@
 import SwiftUI
 
-struct MoviesView: View {
+struct BooksView: View {
   // MARK: - PROPERTIES
   
   // MARK: - BODY
   var body: some View {
     NavigationStack {
-      Text("Filmy")
-        .navigationTitle("Filmy")
+      Text("Knihy")
+        .navigationTitle("Knihy")
     }
   }
 }
@@ -15,6 +15,6 @@ struct MoviesView: View {
 // MARK: - PREVIEW
 #Preview {
   NavigationStack {
-    MoviesView()
+    BooksView()
   }
 }
