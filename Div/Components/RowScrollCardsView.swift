@@ -3,7 +3,7 @@ import SwiftUI
 struct RowScrollCardsView: View {
     // MARK: - PROPERTIES
     let headerTitle: String
-
+    let frameWidth: CGFloat
 
     // MARK: - BODY
     var body: some View {
@@ -12,7 +12,7 @@ struct RowScrollCardsView: View {
             ScrollView(.horizontal) {
                 HStack {
                     ForEach(1...6, id: \.self) { _ in
-                            CardView()
+                        CardView(frameWidth: frameWidth)
                         }
                 }
             }
@@ -24,7 +24,7 @@ struct RowScrollCardsView: View {
 // MARK: - PREVIEW
 #Preview {
     VStack {
-        RowScrollCardsView(headerTitle: "Seznam filmů")
+        RowScrollCardsView(headerTitle: "Seznam filmů", frameWidth: 320)
     }
     .padding(.horizontal)
 }

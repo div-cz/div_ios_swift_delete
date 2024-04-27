@@ -3,6 +3,7 @@ import SwiftUI
 struct CardView: View {
 // MARK: - PROPERTIES
     let image: URL = URL(string: "https://picsum.photos/200/300")!
+    var frameWidth: CGFloat
 
     // MARK: - BODY
     var body: some View {
@@ -12,11 +13,11 @@ struct CardView: View {
                 AsyncImage(url: image, content: { returnedImage in
                     returnedImage
                         .resizable()
-                        .frame(width: 150, height: 200)
+                        .frame(width: frameWidth, height: 200)
                         .cornerRadius(5)
                 }, placeholder: {
                     ProgressView()
-                        .frame(width: 150, height: 200)
+                        .frame(width: frameWidth, height: 200)
                         .cornerRadius(5)
                         .background(.gray)
                 })
@@ -27,5 +28,5 @@ struct CardView: View {
 
 // MARK: - PREVIEW
 #Preview {
-    CardView()
+    CardView(frameWidth: .infinity)
 }
