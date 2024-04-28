@@ -21,6 +21,7 @@
 		44FC4AD82B9F893200FFD287 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC4AD72B9F893200FFD287 /* GamesView.swift */; };
 		44FC4ADA2B9F941B00FFD287 /* Div.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC4AD92B9F941B00FFD287 /* Div.swift */; };
 		AA4089AF2BDDB4A300F87E17 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4089AE2BDDB4A300F87E17 /* Book.swift */; };
+		AAFAFF992BDEC10400B9E948 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFAFF982BDEC10400B9E948 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		44FC4AD72B9F893200FFD287 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
 		44FC4AD92B9F941B00FFD287 /* Div.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Div.swift; path = Div/Scene/Div.swift; sourceTree = SOURCE_ROOT; };
 		AA4089AE2BDDB4A300F87E17 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		AAFAFF982BDEC10400B9E948 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +96,9 @@
 		44B28AD82B8CA12E00674EC1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AA4089AE2BDDB4A300F87E17 /* Book.swift */,
 				44FC4AD92B9F941B00FFD287 /* Div.swift */,
+				AAFAFF982BDEC10400B9E948 /* APIManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -107,7 +111,6 @@
 				44B096582B8F3B8300AA9125 /* BooksView.swift */,
 				44FC4AD72B9F893200FFD287 /* GamesView.swift */,
 				44B0965A2B8F3B9000AA9125 /* InfoView.swift */,
-				AA4089AE2BDDB4A300F87E17 /* Book.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				44DB98612B8CBE8000F443DA /* MainView.swift in Sources */,
 				AA4089AF2BDDB4A300F87E17 /* Book.swift in Sources */,
 				44B096552B8F3A9400AA9125 /* Coordinator.swift in Sources */,
+				AAFAFF992BDEC10400B9E948 /* APIManager.swift in Sources */,
 				44DB98642B8CC15A00F443DA /* CardView.swift in Sources */,
 				445B32A32B8C9A4E006AB596 /* DivApp.swift in Sources */,
 			);
