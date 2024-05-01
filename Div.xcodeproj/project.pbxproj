@@ -21,6 +21,7 @@
 		44FC4AD82B9F893200FFD287 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC4AD72B9F893200FFD287 /* GamesView.swift */; };
 		44FC4ADA2B9F941B00FFD287 /* Div.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC4AD92B9F941B00FFD287 /* Div.swift */; };
 		AA4089AF2BDDB4A300F87E17 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4089AE2BDDB4A300F87E17 /* Book.swift */; };
+		AAA912732BE1996600E26129 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA912722BE1996600E26129 /* Movie.swift */; };
 		AAFAFF992BDEC10400B9E948 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFAFF982BDEC10400B9E948 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		44FC4AD72B9F893200FFD287 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
 		44FC4AD92B9F941B00FFD287 /* Div.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Div.swift; path = Div/Scene/Div.swift; sourceTree = SOURCE_ROOT; };
 		AA4089AE2BDDB4A300F87E17 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		AAA912722BE1996600E26129 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		AAFAFF982BDEC10400B9E948 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				AA4089AE2BDDB4A300F87E17 /* Book.swift */,
+				AAA912722BE1996600E26129 /* Movie.swift */,
 				44FC4AD92B9F941B00FFD287 /* Div.swift */,
 				AAFAFF982BDEC10400B9E948 /* APIManager.swift */,
 			);
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAA912732BE1996600E26129 /* Movie.swift in Sources */,
 				44B0965B2B8F3B9000AA9125 /* InfoView.swift in Sources */,
 				44B096592B8F3B8300AA9125 /* BooksView.swift in Sources */,
 				44FC4AD82B9F893200FFD287 /* GamesView.swift in Sources */,
@@ -361,7 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Div/Preview Content\"";
-				DEVELOPMENT_TEAM = WJ82JM369V;
+				DEVELOPMENT_TEAM = 2MK43D3KDT;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -376,7 +380,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bershee.Div;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christian.Div;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -392,7 +396,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Div/Preview Content\"";
-				DEVELOPMENT_TEAM = WJ82JM369V;
+				DEVELOPMENT_TEAM = 2MK43D3KDT;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -407,7 +411,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bershee.Div;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christian.Div;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
