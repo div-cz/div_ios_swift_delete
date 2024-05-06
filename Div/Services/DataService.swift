@@ -14,7 +14,7 @@ protocol DataService {
 class ProductionDataService: DataService {
     func fetchData() async throws -> [Movie] {
         let session = URLSession.shared
-        let url = URL(string: EndpointAPI.movies.rawValue)
+        let url = URL(string: MoviesEndpoint.urlApi.rawValue)
         guard let url = url else {
             throw APIError.invalidURL
         }

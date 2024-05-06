@@ -30,6 +30,23 @@ struct Movie: Codable, Identifiable {
     var lastUpdated: String?
     var universumID: Int?
 
+    // COMPUTED PROPERTIES
+    var imgPosterURL: String? {
+//        guard let image = imgPoster else {
+//            return nil
+//        }
+//        if image == "noimg.png" {
+//            return nil
+//        } else {
+//            return MoviesEndpoint.schemaImgPoster.rawValue + image
+//        }
+
+        if let imgPoster = imgPoster {
+            return MoviesEndpoint.schemaImgPoster.rawValue + imgPoster
+        }
+        return nil
+    }
+
     enum CodingKeys: String, CodingKey {
         case id = "MovieID"
         case title = "Title"

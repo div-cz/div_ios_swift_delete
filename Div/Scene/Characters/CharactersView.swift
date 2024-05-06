@@ -1,13 +1,13 @@
 import SwiftUI
 
-struct InfoView: View {
+struct CharactersView: View {
     // MARK: - PROPERTIES
 
     // MARK: - BODY
     var body: some View {
         NavigationStack {
-            Text("Info & kontakty")
-            .navigationTitle(Div.info.title)
+            Text("Postavy")
+                .navigationTitle(Div.characters.title)
         }
     }
 }
@@ -15,6 +15,6 @@ struct InfoView: View {
 // MARK: - PREVIEW
 #Preview {
     NavigationStack {
-        InfoView()
+        CharactersView()
     }
 }

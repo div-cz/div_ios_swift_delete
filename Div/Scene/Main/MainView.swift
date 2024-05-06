@@ -8,9 +8,9 @@ struct MainView: View {
         NavigationStack {
             ScrollView(.vertical) {
                 VStack(spacing: 30) {
-                    RowScrollCardsView(headerTitle: "TOP Filmy", frameWidth: 150)
-                    RowScrollCardsView(headerTitle: "TOP Knihy", frameWidth: 360)
-                    RowScrollCardsView(headerTitle: "Komentáře", frameWidth: 200)
+//                    RowScrollCardsView(title: <#String#>, headerTitle: "TOP Filmy", frameWidth: 150)
+//                    RowScrollCardsView(headerTitle: "TOP Knihy", frameWidth: 360)
+//                    RowScrollCardsView(headerTitle: "Komentáře", frameWidth: 200)
                 }
                 Spacer()
             }

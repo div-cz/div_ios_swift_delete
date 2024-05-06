@@ -7,21 +7,18 @@ struct MoviesView: View {
     // MARK: - BODY
     var body: some View {
         NavigationStack {
-            List(model.movies, id: \.id) { movie in
-                VStack(alignment: .leading) {
-                    Text("ID: \(movie.id)")
-                    Text(movie.title ?? "Title movie")
-                        .font(.largeTitle)
-                        .bold()
-                    Text(movie.titleCZ ?? "")
-                        .font(.title2)
-                        .padding(.bottom, 10)
-                    Text(movie.description ?? "Description")
-                    Text("Rating: \(movie.averageRating ?? "N/A")")
-                    Text("Popularity: \(movie.popularity ?? "N/A")")
+            ScrollView {
+                LazyVStack(alignment: .leading) {
+                    ForEach(model.movies, id: \.id) { movie in
+                        HStack {
+                            CardView(image: movie.imgPosterURL ?? "", title: movie.titleCZ ?? "", frameWidth: 150)
+                            Text("\(movie.imgPosterURL)")
+                        }
+                    }
                 }
+                .padding(.horizontal)
+                .navigationTitle(Div.movies.title)
             }
-            .navigationTitle(Div.movies.title)
         }
         .task {
             await model.fetchMoviessData()
@@ -35,5 +32,8 @@ struct MoviesView: View {
         MoviesView()
         // Fetch data from API endpoint
             .environmentObject(MoviesObservableObject(moviesService: ProductionDataService()))
+
+        // Mock data
+        // .environmentObject(MoviesObservableObject(moviesService: MockDataService()))
     }
 }
