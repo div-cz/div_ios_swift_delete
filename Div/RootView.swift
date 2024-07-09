@@ -23,7 +23,7 @@ extension RootView {
             .tabItem {
                 VStack {
                     Image(systemName: "square.grid.2x2.fill")
-                    Text(Div.app.title)
+                    Text(Div.home.title)
                 }
             }
     }

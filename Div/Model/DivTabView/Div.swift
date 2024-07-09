@@ -1,11 +1,11 @@
 import Foundation
 
 enum Div {
-  case app, movies, books, games, characters, locations
+  case home, movies, books, games, characters, locations
 
   var title: String {
     switch self {
-    case .app: return "Div.cz"
+    case .home: return "Div.cz"
     case .movies: return "Filmy"
     case .books: return "Knihy"
     case .games: return "Hry"
