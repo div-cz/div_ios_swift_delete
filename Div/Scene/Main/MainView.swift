@@ -17,9 +17,11 @@ struct MainView: View {
             .scrollIndicators(.hidden)
             .padding(.horizontal)
             .navigationTitle(Div.app.title)
-            .navigationBarTitleDisplayMode(.large)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbarBackground(Color.black.opacity(0.3), for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
             .toolbar {
-                loginButton
+                // loginButton
             }
         }
     }

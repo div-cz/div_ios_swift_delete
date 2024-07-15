@@ -7,10 +7,11 @@ struct DivApp: App {
      RootView()
         .environmentObject(Coordinator())
         // Fetch data from API endpoint
-        .environmentObject(MoviesObservableObject(moviesService: ProductionDataService()))
+        // .environmentObject(MoviesObservableObject(moviesService: ProductionDataService()))
 
         // Fetch mock data
-        // .environmentObject(MoviesObservableObject(moviesService: MockDataService()))
+        .environmentObject(MoviesObservableObject(moviesService: MockDataService()))
+        .preferredColorScheme(.dark)
     }
   }
 }
