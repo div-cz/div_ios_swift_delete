@@ -13,6 +13,8 @@
 		AA3F043E2C46B78F00B010D9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AA3F043D2C46B78F00B010D9 /* Base */; };
 		AA3F04402C46B78F00B010D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA3F043F2C46B78F00B010D9 /* Assets.xcassets */; };
 		AA3F04432C46B78F00B010D9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AA3F04422C46B78F00B010D9 /* Base */; };
+		AA3F044C2C46B7D100B010D9 /* FilmsCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA3F044B2C46B7D100B010D9 /* FilmsCollectionView.xib */; };
+		AA3F044D2C46B7D100B010D9 /* FilmsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3F044A2C46B7D100B010D9 /* FilmsCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AA3F043F2C46B78F00B010D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA3F04422C46B78F00B010D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA3F04442C46B78F00B010D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA3F044A2C46B7D100B010D9 /* FilmsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsCollectionView.swift; sourceTree = "<group>"; };
+		AA3F044B2C46B7D100B010D9 /* FilmsCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmsCollectionView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				AA3F04382C46B78F00B010D9 /* SceneDelegate.swift */,
 				AA3F043A2C46B78F00B010D9 /* ViewController.swift */,
 				AA3F043C2C46B78F00B010D9 /* Main.storyboard */,
+				AA3F044A2C46B7D100B010D9 /* FilmsCollectionView.swift */,
+				AA3F044B2C46B7D100B010D9 /* FilmsCollectionView.xib */,
 				AA3F043F2C46B78F00B010D9 /* Assets.xcassets */,
 				AA3F04412C46B78F00B010D9 /* LaunchScreen.storyboard */,
 				AA3F04442C46B78F00B010D9 /* Info.plist */,
@@ -127,6 +133,7 @@
 			files = (
 				AA3F04402C46B78F00B010D9 /* Assets.xcassets in Resources */,
 				AA3F04432C46B78F00B010D9 /* Base in Resources */,
+				AA3F044C2C46B7D100B010D9 /* FilmsCollectionView.xib in Resources */,
 				AA3F043E2C46B78F00B010D9 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +147,7 @@
 			files = (
 				AA3F043B2C46B78F00B010D9 /* ViewController.swift in Sources */,
 				AA3F04372C46B78F00B010D9 /* AppDelegate.swift in Sources */,
+				AA3F044D2C46B7D100B010D9 /* FilmsCollectionView.swift in Sources */,
 				AA3F04392C46B78F00B010D9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
