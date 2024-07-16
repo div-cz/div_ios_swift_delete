@@ -20,7 +20,7 @@ struct CardView: View {
                 } placeholder: {
                     // Shows when image is available, but is loading
                         VStack {
-                            Image(.divSquare)
+                            Image(.divLogoText)
                                 .resizable()
                                 .frame(width: 48, height: 40)
                                 .padding(.bottom)
@@ -42,7 +42,7 @@ struct CardView: View {
 //                        .lineLimit(4)
 //                        .frame(width: frameWidth)
 //                        .foregroundColor(.black)
-                    Image(.divSquare)
+                    Image(.divLogoText)
                         .resizable()
                         .frame(width: 48, height: 40)
                 }

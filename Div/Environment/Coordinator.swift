@@ -28,4 +28,8 @@ final class Coordinator: ObservableObject {
     var moreTabList: some View {
         OthersListView()
     }
+
+    var accountScene: some View {
+        Text("Účet uživatele")
+    }
 }

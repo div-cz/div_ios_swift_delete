@@ -14,11 +14,14 @@ struct RootView: View {
                 gamesTab
                 moreTab
             }
-            .navigationTitle(navTitle(for: selectedTab))
             .navigationBarTitleDisplayMode(.inline)
-            .toolbarBackground(accentColor(for: selectedTab), for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
             .accentColor(accentColor(for: selectedTab))
+            .toolbar {
+                divLogo
+                searchSymbol
+                userAccount
+            }
         }
     }
 }
@@ -100,6 +103,42 @@ extension RootView {
         case .characters: return Div.characters.color
         case .locations: return Div.locations.color
         case .others: return Div.others.color
+        }
+    }
+
+    private var userAccount: some ToolbarContent {
+        ToolbarItem(placement: .topBarTrailing) {
+            NavigationLink {
+                coordinator.accountScene
+            } label: {
+                Image(systemName: "person.circle")
+                    .foregroundColor(.white)
+                    .font(Font.body.weight(.bold))
+            }
+        }
+    }
+
+    private var searchSymbol: some ToolbarContent {
+        ToolbarItem(placement: .topBarTrailing) {
+            Button {
+
+            } label: {
+                Image(systemName: "magnifyingglass")
+                    .foregroundColor(.white)
+                    .font(Font.body.weight(.bold))
+            }
+        }
+    }
+
+    private var divLogo: some ToolbarContent {
+        ToolbarItem(placement: .topBarLeading) {
+            HStack(spacing: 15) {
+                Image(.divLogo)
+                    .resizable()
+                    .frame(width: 25, height: 25)
+                Text(navTitle(for: selectedTab))
+                    .fontWeight(.bold)
+            }
         }
     }
 }

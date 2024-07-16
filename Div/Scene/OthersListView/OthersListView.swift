@@ -33,6 +33,16 @@ struct OthersListView: View {
                 }
 
                 Section {
+                    Link(destination: URL(string: "https://div.cz/prihlaseni/")!,
+                         label: {
+                        HStack {
+                            Image(systemName: "person.circle")
+                            Text("Přihlásit / Registrovat")
+                        }
+                    })
+                }
+
+                Section {
                     NavigationLink {
                         Text("O čem to je?")
                     } label: {
@@ -58,7 +68,6 @@ struct OthersListView: View {
                             Text("Náš tým")
                         }
                     }
-
                 }
             }
             .listStyle(.grouped)
