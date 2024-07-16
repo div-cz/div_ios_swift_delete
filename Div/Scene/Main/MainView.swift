@@ -48,7 +48,7 @@ extension MainView {
 
 // MARK: - PREVIEW
 #Preview {
-    NavigationStack {
+    NavigationView {
         MainView()
     }
 }

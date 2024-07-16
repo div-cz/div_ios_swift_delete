@@ -13,7 +13,7 @@ struct BooksView: View {
 
 // MARK: - PREVIEW
 #Preview {
-  NavigationStack {
+  NavigationView {
     BooksView()
   }
 }

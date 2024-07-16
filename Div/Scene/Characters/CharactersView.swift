@@ -13,7 +13,7 @@ struct CharactersView: View {
 
 // MARK: - PREVIEW
 #Preview {
-    NavigationStack {
+    NavigationView {
         CharactersView()
     }
 }

@@ -29,7 +29,7 @@ struct MoviesView: View {
 
 // MARK: - PREVIEW
 #Preview {
-    NavigationStack {
+    NavigationView {
         MoviesView()
         // Fetch data from API endpoint
             .environmentObject(MoviesObservableObject(moviesService: ProductionDataService()))
