@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  div_ios
+//  Div
 //
 //  Created by Christián on 16/07/2024.
 //
