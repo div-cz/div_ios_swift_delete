@@ -24,4 +24,8 @@ final class Coordinator: ObservableObject {
     var locationsScene: some View {
         LocationsView()
     }
+
+    var moreTabList: some View {
+        OthersListView()
+    }
 }

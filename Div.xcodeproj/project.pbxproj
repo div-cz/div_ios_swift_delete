@@ -27,6 +27,7 @@
 		44DB98642B8CC15A00F443DA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DB98632B8CC15A00F443DA /* CardView.swift */; };
 		44FC4AD82B9F893200FFD287 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC4AD72B9F893200FFD287 /* GamesView.swift */; };
 		44FC4ADA2B9F941B00FFD287 /* Div.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC4AD92B9F941B00FFD287 /* Div.swift */; };
+		44FCB4272C4686C300603462 /* OthersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FCB4262C4686C300603462 /* OthersListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		44DB98632B8CC15A00F443DA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		44FC4AD72B9F893200FFD287 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
 		44FC4AD92B9F941B00FFD287 /* Div.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Div.swift; path = Div/Model/DivTabView/Div.swift; sourceTree = SOURCE_ROOT; };
+		44FCB4262C4686C300603462 /* OthersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 				445A307E2BE2945200F5BF97 /* Games */,
 				445A307F2BE2945B00F5BF97 /* Characters */,
 				44BFA3D62BE8DB90006EAE4F /* Locations */,
+				44FCB4252C46868500603462 /* OthersListView */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -233,6 +236,14 @@
 				44D2A2062B8F7449008977B6 /* RowScrollCardsView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		44FCB4252C46868500603462 /* OthersListView */ = {
+			isa = PBXGroup;
+			children = (
+				44FCB4262C4686C300603462 /* OthersListView.swift */,
+			);
+			path = OthersListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +354,7 @@
 				44B096552B8F3A9400AA9125 /* Coordinator.swift in Sources */,
 				44BFA3D82BE8DBC4006EAE4F /* LocationsView.swift in Sources */,
 				44DB98642B8CC15A00F443DA /* CardView.swift in Sources */,
+				44FCB4272C4686C300603462 /* OthersListView.swift in Sources */,
 				445B32A32B8C9A4E006AB596 /* DivApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

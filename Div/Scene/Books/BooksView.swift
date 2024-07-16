@@ -7,7 +7,6 @@ struct BooksView: View {
   var body: some View {
     NavigationStack {
       Text("Knihy")
-        .navigationTitle(Div.books.title)
     }
   }
 }

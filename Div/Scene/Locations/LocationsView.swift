@@ -11,7 +11,6 @@ struct LocationsView: View {
     var body: some View {
         NavigationStack {
             Text("Lokality")
-                .navigationTitle(Div.locations.title)
         }
     }
 }

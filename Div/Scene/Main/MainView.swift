@@ -8,6 +8,9 @@ struct MainView: View {
         NavigationStack {
             ScrollView(.vertical) {
                 VStack(spacing: 30) {
+                    Text("Div.cz")
+                        .font(.largeTitle)
+                        .padding(.top, 100)
 //                    RowScrollCardsView(title: <#String#>, headerTitle: "TOP Filmy", frameWidth: 150)
 //                    RowScrollCardsView(headerTitle: "TOP Knihy", frameWidth: 360)
 //                    RowScrollCardsView(headerTitle: "Komentáře", frameWidth: 200)
@@ -16,10 +19,10 @@ struct MainView: View {
             }
             .scrollIndicators(.hidden)
             .padding(.horizontal)
-            .navigationTitle(Div.app.title)
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbarBackground(Color.black.opacity(0.3), for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
+//            .navigationTitle(Div.app.title)
+//            .navigationBarTitleDisplayMode(.inline)
+//            .toolbarBackground(Color.black.opacity(0.3), for: .navigationBar)
+//            .toolbarBackground(.visible, for: .navigationBar)
             .toolbar {
                 // loginButton
             }

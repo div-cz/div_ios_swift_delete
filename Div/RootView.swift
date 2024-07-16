@@ -2,46 +2,39 @@ import SwiftUI
 
 struct RootView: View {
     @EnvironmentObject var coordinator: Coordinator
-    @State private var selection: Div = .app
+    @State private var selectedTab: Div = .home
 
     // MARK: - BODY
     var body: some View {
-        TabView(selection: $selection) {
+        NavigationView {
+            TabView(selection: $selectedTab) {
                 homeTab
                 moviesTab
                 booksTab
                 gamesTab
-                charactersTab
-                locationsTab
+                moreTab
             }
-        .accentColor(accentColor(for: selection))
+            .navigationTitle(navTitle(for: selectedTab))
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbarBackground(accentColor(for: selectedTab), for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
+            .accentColor(accentColor(for: selectedTab))
+        }
     }
 }
 
-// MARK: - EXTENSION
 extension RootView {
-    private func accentColor(for selection: Div) -> Color {
-        switch selection {
-        case .app: return Div.app.color
-        case .movies: return Div.movies.color
-        case .books: return Div.books.color
-        case .games: return Div.games.color
-        case .characters: return Div.characters.color
-        case .locations: return Div.locations.color
-        }
-       }
-
     private var homeTab: some View {
         coordinator.mainScene
             .tabItem {
                 VStack {
-                    Image(systemName: "square.grid.2x2.fill")
-                    Text(Div.app.title)
+                    Image(systemName: "house")
+                    Text(Div.home.title)
                 }
             }
-            .tag(Div.app)
+            .tag(Div.home)
     }
-    
+
     private var moviesTab: some View {
         coordinator.moviesScene
             .tabItem {
@@ -52,7 +45,7 @@ extension RootView {
             }
             .tag(Div.movies)
     }
-    
+
     private var booksTab: some View {
         coordinator.booksScene
             .tabItem {
@@ -63,7 +56,7 @@ extension RootView {
             }
             .tag(Div.books)
     }
-    
+
     private var gamesTab: some View {
         coordinator.gamesScene
             .tabItem {
@@ -74,38 +67,52 @@ extension RootView {
             }
             .tag(Div.games)
     }
-    
-    private var charactersTab: some View {
-        coordinator.charactersScene
+
+    private var moreTab: some View {
+        coordinator.moreTabList
             .tabItem {
                 VStack {
-                    Image(systemName: "person")
-                    Text(Div.characters.title)
+                    Image(systemName: "ellipsis")
+                    Text("Další")
                 }
             }
-            .tag(Div.characters)
+            .tag(Div.others)
     }
-    
-    private var locationsTab: some View {
-        coordinator.locationsScene
-            .tabItem {
-                VStack {
-                    Image(systemName: "map")
-                    Text(Div.locations.title)
-                }
-            }
-            .tag(Div.locations)
+
+    private func navTitle(for selection: Div) -> String {
+        switch selection {
+        case .home: return Div.home.title
+        case .movies: return Div.movies.title
+        case .books: return Div.books.title
+        case .games: return Div.games.title
+        case .characters: return Div.characters.title
+        case .locations: return Div.locations.title
+        case .others: return Div.others.title
+        }
+    }
+
+    private func accentColor(for selection: Div) -> Color {
+        switch selection {
+        case .home: return Div.home.color
+        case .movies: return Div.movies.color
+        case .books: return Div.books.color
+        case .games: return Div.games.color
+        case .characters: return Div.characters.color
+        case .locations: return Div.locations.color
+        case .others: return Div.others.color
+        }
     }
 }
 
-// MARK: - PREVIEW
+
+// MARK: - Preview
 #Preview {
     RootView()
         .preferredColorScheme(.dark)
         .environmentObject(Coordinator())
     // Fetch data from API
         .environmentObject(MoviesObservableObject(moviesService: ProductionDataService()))
-    
+
     // Mock data
     // .environmentObject(MoviesObservableObject(moviesService: MockDataService()))
 }
