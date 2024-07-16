@@ -13,13 +13,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = UIColor.black
         
         // Do any additional setup after loading the view.
         setupLoginButton()
         setupRegisterButton()
         setupMailField()
         setupPasswordField()
+        welcomeImage()
+        
     }
     
     
@@ -29,12 +31,32 @@ class ViewController: UIViewController {
 
 extension ViewController {
     
+    func welcomeImage() {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "welcomeImage")
+        imageView.contentMode = .scaleAspectFit
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(imageView)
+        NSLayoutConstraint.activate([
+            imageView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            imageView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 100),
+            imageView.widthAnchor.constraint(equalToConstant: 300),
+            imageView.heightAnchor.constraint(equalToConstant: 300)
+        ])
+        
+        
+        
+        NSLayoutConstraint.activate([
+            
+        ])
+    }
+    
     func setupLoginButton() {
         let button = UIButton(type: .system)
         self.view.addSubview(button)
         button.setTitle("Login", for: .normal)
         button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = .systemBlue
+        button.backgroundColor = .red
         button.frame = CGRect(x: 100, y: 100, width: 200, height: 50)
         button.layer.cornerRadius = 10
         button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
@@ -55,7 +77,7 @@ extension ViewController {
         self.view.addSubview(button)
         button.setTitle("Register", for: .normal)
         button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = .systemBlue
+        button.backgroundColor = .red
         button.frame = CGRect(x: 100, y: 100, width: 200, height: 50)
         button.layer.cornerRadius = 10
         button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
@@ -70,10 +92,6 @@ extension ViewController {
         ])
 
     }
-    
-    @objc func buttonTapped() {
-            print("Tlačidlo bolo stlačené!")
-        }
     
     func setupMailField() {
         let textField = UITextField()
@@ -106,5 +124,9 @@ extension ViewController {
             textField.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
+    
+    @objc func buttonTapped() {
+            print("Tlačidlo bolo stlačené!")
+        }
 }
 
