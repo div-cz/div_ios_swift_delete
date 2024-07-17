@@ -2,7 +2,7 @@ import SwiftUI
 
 final class Coordinator: ObservableObject {
     var mainScene: some View {
-        MainView()
+        HomeView(searchText: .constant(""))
     }
 
     var moviesScene: some View {

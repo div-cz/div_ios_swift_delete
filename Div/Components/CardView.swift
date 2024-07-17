@@ -5,6 +5,7 @@ struct CardView: View {
     let image: String?
     let title: String
     var frameWidth: CGFloat
+    var frameHeight: CGFloat
 
     // MARK: - BODY
     var body: some View {
@@ -15,7 +16,7 @@ struct CardView: View {
                 AsyncImage(url: URL(string: image)) { image in
                     image
                         .resizable()
-                        .frame(width: frameWidth, height: 200)
+                        .frame(width: frameWidth, height: frameHeight)
                         .cornerRadius(5)
                 } placeholder: {
                     // Shows when image is available, but is loading
@@ -27,7 +28,7 @@ struct CardView: View {
                             ProgressView()
                         }
                         .padding()
-                        .frame(width: frameWidth, height: 200)
+                        .frame(width: frameWidth, height: frameHeight)
                         .background(
                             RoundedRectangle(cornerRadius: 5)
                                 .foregroundColor(.gray.opacity(0.2))
@@ -68,9 +69,9 @@ struct CardView: View {
 #Preview {
     VStack(spacing: 20) {
         HStack(spacing: 20) {
-            CardView(image: Movies.mock.movies.first!.imgPosterURL ?? "https://image.tmdb.org/t/p/w300_and_h450_bestv2//gh4cZbhZxyTbgxQPxD0dOudNPTn.jpg", title: "Spiderman", frameWidth: 150)
-            CardView(image: "noimg.png", title: "", frameWidth: 150)
+            CardView(image: Movies.mock.movies.first!.imgPosterURL ?? "https://image.tmdb.org/t/p/w300_and_h450_bestv2//gh4cZbhZxyTbgxQPxD0dOudNPTn.jpg", title: "Spiderman", frameWidth: 150, frameHeight: 200)
+            CardView(image: "noimg.png", title: "", frameWidth: 150, frameHeight: 200)
         }
-        CardView(image: nil, title: "Letopisy Narnie: Lev, čarodějnice a skříň Letopisy Narnie: Lev, čarodějnice a skříň Letopisy Narnie: Lev, čarodějnice a skříň", frameWidth: 150)
+        CardView(image: nil, title: "Letopisy Narnie: Lev, čarodějnice a skříň Letopisy Narnie: Lev, čarodějnice a skříň Letopisy Narnie: Lev, čarodějnice a skříň", frameWidth: 150, frameHeight: 200)
     }
 }

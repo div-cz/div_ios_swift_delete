@@ -19,7 +19,7 @@ struct RootView: View {
             .accentColor(accentColor(for: selectedTab))
             .toolbar {
                 divLogo
-                searchSymbol
+                // searchSymbol
                 userAccount
             }
         }

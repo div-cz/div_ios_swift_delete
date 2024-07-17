@@ -7,19 +7,18 @@ struct MoviesView: View {
     // MARK: - BODY
     var body: some View {
         NavigationStack {
-            Text("Filmy")
-//            ScrollView {
-//                Text("Filmy")
-////                LazyVStack(alignment: .leading) {
-////                    ForEach(model.movies, id: \.id) { movie in
-////                        HStack {
-////                            CardView(image: movie.imgPosterURL ?? "", title: movie.titleCZ ?? "", frameWidth: 150)
-////                            Text("\(movie.imgPosterURL)")
-////                        }
-////                    }
-////                }
-//                .padding(.horizontal)
-//            }
+            ScrollView {
+                Text("Filmy")
+                LazyVStack(alignment: .leading) {
+                    ForEach(model.movies, id: \.id) { movie in
+                        HStack {
+                            CardView(image: movie.imgPosterURL ?? "", title: movie.titleCZ ?? "", frameWidth: 150, frameHeight: 200)
+                            Text("\(movie.imgPosterURL)")
+                        }
+                    }
+                }
+                .padding(.horizontal)
+            }
         }
         .task {
             await model.fetchMoviessData()
