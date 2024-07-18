@@ -90,6 +90,9 @@ extension ViewController {
             button.widthAnchor.constraint(equalToConstant: 200),
             button.heightAnchor.constraint(equalToConstant: 50)
         ])
+        let VC = FilmsCollectionView()
+//        VC.modalPresentationStyle = .fullScreen
+//        self.present(VC, animated: true)
 
     }
     
