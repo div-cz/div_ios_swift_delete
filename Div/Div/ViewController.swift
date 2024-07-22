@@ -80,6 +80,7 @@ extension ViewController {
         button.backgroundColor = .red
         button.frame = CGRect(x: 100, y: 100, width: 200, height: 50)
         button.layer.cornerRadius = 10
+        button.addTarget(self, action: #selector(showFilmsCollection), for: .touchUpInside)
         button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -90,9 +91,6 @@ extension ViewController {
             button.widthAnchor.constraint(equalToConstant: 200),
             button.heightAnchor.constraint(equalToConstant: 50)
         ])
-        let VC = FilmsCollectionView()
-//        VC.modalPresentationStyle = .fullScreen
-//        self.present(VC, animated: true)
 
     }
     
@@ -131,5 +129,11 @@ extension ViewController {
     @objc func buttonTapped() {
             print("Tlačidlo bolo stlačené!")
         }
+    @objc func showFilmsCollection() {
+        let filmsCollectionVC = FilmsCollectionView()
+        filmsCollectionVC.modalPresentationStyle = .fullScreen
+        self.present(filmsCollectionVC, animated: true, completion: nil)
+    }
+
 }
 
